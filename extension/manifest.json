@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Liquid storage",
+  "version": "1.0.0",
+  "description": "Chrome extension that allows you to track sales on Steam and Epic Games.",
+  "icons": {
+    "16": "./assets/header-logo.png",
+    "32": "./assets/header-logo.png",
+    "48": "./assets/header-logo.png",
+    "128": "./assets/header-logo.png"
+  },
+  "action": {
+    "default_popup": "./page.html"
+  }
+}
