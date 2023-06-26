@@ -1,0 +1,16 @@
+
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    &-logo{
+      img{
+        width: 3em;
+        height: 3em;
+      }
+    }
+    &-version{
+      font-size: 3em;
+    }
+  }

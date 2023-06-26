@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 45em;
+  background-image: url("../public/assets/header-background.png");
+  background-size: cover; }
+  .header-logo img {
+    width: 3em;
+    height: 3em; }
+  .header-nav {
+    display: flex; }
+    .header-nav-link-settings img {
+      position: relative;
+      width: 3em;
+      height: 3em; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em; }
+  .footer-logo img {
+    width: 3em;
+    height: 3em; }
+  .footer-version {
+    font-size: 3em; }
+
+/*# sourceMappingURL=globals.css.map */
