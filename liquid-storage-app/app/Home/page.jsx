@@ -1,13 +1,18 @@
-import Link from "next/link";
 
-const Home = () => {
+import Folder from "@/app/Home/Folder/Folder";
+
+const Storage = () => {
     return(
-        <div className="home">
-            <div className="home-button">
-                <Link href={'/Storage'}>Storage</Link>
-            </div>
+        <div className={"storage"}>
+            <h1>Folders:</h1>
+            <ul className={"storage-list"}>
+                <li>
+                    <Folder />
+                </li>
+            </ul>
+            <button className={"storage-add-btn"}>Add Folder</button>
         </div>
     )
 }
 
-export default Home;
+export default Storage;

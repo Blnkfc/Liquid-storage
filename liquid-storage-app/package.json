@@ -3,16 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build && next export && move out\\_next out\\next && move out\\next ..\\extension && powershell -Command \"Get-ChildItem -Recurse -Filter *.html | ForEach-Object { (Get-Content -Raw $_.FullName) -replace '/_next', './next' | Set-Content -Path $_.FullName -Force }\" && move out\\*.html ..\\extension && robocopy public\\assets ..\\extension\\assets",
     "remove": "node -e \"const rimraf = require('rimraf'); const fs = require('fs-extra'); fs.readdir('../extension', (err, files) => { files.forEach(file => { if (file !== 'manifest.json') rimraf.sync('../extension/' + file); }); })\"",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.4.7",
     "eslint": "7.23.0",
     "eslint-config-next": "12.0.4",
-    "next": "13.0.0",
+    "extend": "^3.0.2",
+    "http-simple-proxy": "^1.0.5",
+    "https-proxy-agent": "^7.0.0",
+    "next": "^13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.63.6"

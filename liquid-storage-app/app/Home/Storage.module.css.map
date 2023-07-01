@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAOA,eAAe;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;;ACRrB,QAAQ;EACN,KAAK,EDFK,OAAO;ECGjB,KAAK,EDCO,IAAI",
+"sources": ["../variables.scss","Storage.module.scss"],
+"names": [],
+"file": "Storage.module.css"
+}

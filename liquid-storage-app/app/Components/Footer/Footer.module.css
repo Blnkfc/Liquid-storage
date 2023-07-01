@@ -1,12 +1,21 @@
+.flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 2em; }
+  align-items: flex-end;
+  margin-top: 2em;
+  height: 6em;
+  background-image: url("/assets/footer-background.png");
+  background-size: cover;
+  width: 30em; }
   .footer-logo img {
     width: 3em;
     height: 3em; }
   .footer-version {
-    font-size: 3em; }
+    font-size: 2em; }
 
 /*# sourceMappingURL=Footer.module.css.map */

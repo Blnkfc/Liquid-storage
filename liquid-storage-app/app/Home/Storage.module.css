@@ -1,0 +1,10 @@
+.flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.storage {
+  color: #280078;
+  width: 30em; }
+
+/*# sourceMappingURL=Storage.module.css.map */

@@ -1,3 +1,30 @@
+@import "variables";
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/assets/Lato-Regular.woff2') format('woff2'),
+  url('/assets/Lato-Regular.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: $background-color;
+}
+
+
+
 @import "Components/Header/Header.module";
 @import "Components/Footer/Footer.module";
+@import "Home/Storage.module";
+@import "Home/Folder/Folder.module";
+@import "Home/Folder/StorageUnit/StorageUnit.module";
+
+
 

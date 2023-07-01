@@ -1,0 +1,35 @@
+.flex-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.folder {
+  color: #280078; }
+  .folder-list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .folder-unit {
+    display: block;
+    width: 30em;
+    cursor: pointer;
+    padding: 0.4em;
+    border-bottom: none; }
+    .folder-unit:hover {
+      background: #61a0ff; }
+  .folder input[type="checkbox"] {
+    position: absolute;
+    left: -9999px; }
+  .folder input[type="checkbox"] ~ ul {
+    height: 0;
+    transform: scaleY(0); }
+  .folder input[type="checkbox"]:checked ~ ul {
+    height: 100%;
+    transform-origin: top;
+    transition: transform .2s ease-out;
+    transform: scaleY(1); }
+  .folder input[type="checkbox"]:checked + label {
+    background: #61a0ff;
+    border-bottom: 1px solid #fff; }
+
+/*# sourceMappingURL=Folder.module.css.map */

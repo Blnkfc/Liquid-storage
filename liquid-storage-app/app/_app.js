@@ -1,7 +1,6 @@
 import styles from "./globals.css"
 import Header from "./Components/Header/page.jsx";
-import Footer from "@/app/Components/Footer/page";
-import Content from "@/app/Content/Content";
+import Footer from "./Components/Footer/page.jsx";
 
 
 
@@ -15,7 +14,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
       <Header />
-      <Content />
       <main>{children}</main>
       <Footer />
       </body>

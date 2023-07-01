@@ -1,17 +1,56 @@
+.flex-centering, .header-nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .header {
   display: flex;
   justify-content: space-between;
-  width: 45em;
-  background-image: url("../../../public/assets/header-background.png");
+  align-items: flex-start;
+  width: 30em;
+  height: 6em;
+  padding-top: 0.2em;
+  font-family: Lato, sans-serif;
+  background-image: url("/assets/header-background.png");
   background-size: cover; }
   .header-logo img {
     width: 3em;
     height: 3em; }
   .header-nav {
     display: flex; }
-    .header-nav-link-settings img {
-      position: relative;
-      width: 3em;
-      height: 3em; }
+    .header-nav-link {
+      text-decoration: none;
+      padding: 0 1em 0 1em;
+      width: 5em;
+      height: 2em;
+      color: #d9f6ff; }
+      .header-nav-link:hover {
+        border: solid 1px #61a0ff;
+        border-radius: 50%;
+        -webkit-box-shadow: inset 0 0 21px 2px #61a0ff;
+        -moz-box-shadow: inset 0 0 21px 2px #61a0ff;
+        box-shadow: inset 0 0 21px 2px #61a0ff;
+        animation: 0.2s linear puff, 0.1s linear bounce; }
+      .header-nav-link-settings img {
+        position: relative;
+        width: 3em;
+        height: 3em; }
+
+@keyframes puff {
+  0% {
+    width: 5em;
+    height: 2em; }
+  25% {
+    width: 4.7em;
+    height: 2.3em; }
+  50% {
+    width: 5em;
+    height: 2em; }
+  75% {
+    width: 5.2em;
+    height: 2em; }
+  100% {
+    width: 5em;
+    height: 2em; } }
 
 /*# sourceMappingURL=Header.module.css.map */

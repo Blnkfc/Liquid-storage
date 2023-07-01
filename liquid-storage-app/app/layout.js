@@ -1,6 +1,7 @@
 import styles from "./globals.css"
 import Header from "./Components/Header/page.jsx";
-import Footer from "@/app/Components/Footer/page";
+import Footer from "./Components/Footer/page.jsx";
+
 
 
 
@@ -13,9 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-        <body>
+        <meta httpEquiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;"/>        <body>
         <Header />
-        <main>{children}</main>
+        <main >{children}</main>
         <Footer />
         </body>
         </html>

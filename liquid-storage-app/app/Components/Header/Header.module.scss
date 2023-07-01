@@ -1,9 +1,13 @@
-
+@import "../../variables";
 .header{
   display: flex;
   justify-content: space-between;
-  width: 45em;
-  background-image: url("../../../public/assets/header-background.png");
+  align-items: flex-start;
+  width: $popup-width;
+  height: 6em;
+  padding-top: 0.2em;
+  font-family: Lato, sans-serif;
+  background-image: url("/assets/header-background.png");
   background-size: cover;
   &-logo{
     img{
@@ -14,6 +18,20 @@
   &-nav{
     display: flex;
     &-link{
+      @extend .flex-centering;
+      text-decoration: none;
+      padding: 0 1em 0 1em;
+      width: 5em;
+      height: 2em;
+      color: $text-light;
+      &:hover{
+        border: solid 1px $light-blue;
+        border-radius: 50%;
+        -webkit-box-shadow: inset 0 0 21px 2px rgba(97,160,255,1);
+        -moz-box-shadow: inset 0 0 21px 2px rgba(97,160,255,1);
+        box-shadow: inset 0 0 21px 2px rgba(97,160,255,1);
+        animation: 0.2s linear puff, 0.1s linear bounce;
+      }
       &-settings{
         img{
           position: relative;
@@ -22,5 +40,28 @@
         }
       }
     }
+  }
+}
+
+@keyframes puff {
+  0%{
+    width: 5em;
+    height: 2em;
+  }
+  25%{
+    width: 4.7em;
+    height: 2.3em;
+  }
+  50%{
+    width: 5em;
+    height: 2em;
+  }
+  75%{
+    width: 5.2em;
+    height: 2em;
+  }
+  100%{
+    width: 5em;
+    height: 2em;
   }
 }
