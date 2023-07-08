@@ -1,9 +1,12 @@
+'use client';
 
+const StorageUnit = (props) => {
 
-const StorageUnit = () => {
+    console.log(props.link.value)
+
     return(
         <div>
-            Storage Unit
+            <a href={props.link.value}>{props.link.value}</a>
         </div>
     )
 }

@@ -9,7 +9,7 @@ export default function HeaderLayout({ children }) {
                 <Link href={'/'}><img src="/assets/header-logo.png" alt=""/></Link>
             </div>
             <div className="header-nav">
-                <Link href={'/'} className="header-nav-link">Home</Link>
+                <Link href={'/Home'} className="header-nav-link">Home</Link>
                 <Link href={'/'} className="header-nav-link">Storage</Link>
                 <div className="header-nav-link header-nav-link-settings">
                     <img src="/assets/header-settings.png" alt=""/>
