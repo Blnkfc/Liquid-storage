@@ -2,10 +2,12 @@
   "foldersList": [
     {
       "name": "osu",
+      "isFolder": true,
       "tabs": [
         {
           "tab": {
             "value": "https://osu.ppy.sh/beatmapsets?q=Interstellar%20Re&s=any",
+            "isFolder": false,
             "id": 0
           }
         }
@@ -14,11 +16,13 @@
     },
     {
       "name": "anime",
+      "isFolder": true,
       "tabs": [
         {
           "tab": {
             "value": "https://animego.org/anime/mastera-mecha-onlayn-2-310",
-            "id": 1
+            "isFolder": false,
+            "id": 0
           }
         }
       ],

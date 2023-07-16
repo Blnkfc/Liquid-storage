@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAOA,eAAe;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;;ACRrB,GAAG;EACD,KAAK,EDFK,OAAO",
+"mappings": "AAQA,eAAe;EACb,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;;ACTrB,EAAE;EACA,UAAU,EAAE,IAAI;EAChB,KAAK,EDFK,OAAO",
 "sources": ["../../../variables.scss","StorageUnit.module.scss"],
 "names": [],
 "file": "StorageUnit.module.css"

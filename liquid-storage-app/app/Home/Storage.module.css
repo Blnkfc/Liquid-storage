@@ -1,10 +1,60 @@
-.flex-centering {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+/*
+Error: Invalid CSS after "      color: ": expected expression (e.g. 1px, bold), was "$;"
+        on line 14 of F:\Portfolio\LS\liquid-storage-app\app\Home\Storage.module.scss
 
-.storage {
-  color: #280078;
-  width: 30em; }
+9:     background-size: cover;
+10:     border: solid 1px $blue;
+11:     border-radius: 1em;
+12:     color: $text-light;
+13:     &:hover{
+14:       color: $;
+15:     }
+16:   }
+17: }
+18: h1 {
+19:   font-family: Lato,sans-serif;
 
-/*# sourceMappingURL=Storage.module.css.map */
+Backtrace:
+F:\Portfolio\LS\liquid-storage-app\app\Home\Storage.module.scss:14
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:988:in `value!'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:796:in `block in try_declaration'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+F:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+F:/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+F:/Koala/bin/sass:22:in `load'
+F:/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"      color: \": expected expression (e.g. 1px, bold), was \"$;\"\A         on line 14 of F:\Portfolio\LS\liquid-storage-app\app\Home\Storage.module.scss\A \A 9:     background-size: cover;\A 10:     border: solid 1px $blue;\A 11:     border-radius: 1em;\A 12:     color: $text-light;\A 13:     &:hover{\A 14:       color: $;\A 15:     }\A 16:   }\A 17: }\A 18: h1 {\A 19:   font-family: Lato,sans-serif;"; }

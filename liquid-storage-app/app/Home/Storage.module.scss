@@ -1,6 +1,20 @@
 @import "../variables";
 
-.storage{
+.storage {
   color: $text-dark;
   width: $popup-width;
+  &-add-btn{
+    padding: 0.5em;
+    background-image: url("/assets/btn-background.png");
+    background-size: cover;
+    border: solid 1px $blue;
+    border-radius: 1em;
+    color: $text-light;
+    &:hover{
+      color: $text-white;
+    }
+  }
+}
+h1 {
+  font-family: Lato,sans-serif;
 }

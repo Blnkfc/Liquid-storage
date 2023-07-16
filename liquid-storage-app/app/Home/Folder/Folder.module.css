@@ -4,32 +4,17 @@
   align-items: center; }
 
 .folder {
-  color: #280078; }
-  .folder-list {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .folder-unit {
+  color: #280078;
+  font-family: Lato, sans-serif; }
+  .folder-name {
     display: block;
-    width: 30em;
-    cursor: pointer;
-    padding: 0.4em;
-    border-bottom: none; }
-    .folder-unit:hover {
-      background: #61a0ff; }
-  .folder input[type="checkbox"] {
-    position: absolute;
-    left: -9999px; }
-  .folder input[type="checkbox"] ~ ul {
-    height: 0;
-    transform: scaleY(0); }
-  .folder input[type="checkbox"]:checked ~ ul {
-    height: 100%;
-    transform-origin: top;
-    transition: transform .2s ease-out;
-    transform: scaleY(1); }
-  .folder input[type="checkbox"]:checked + label {
-    background: #61a0ff;
-    border-bottom: 1px solid #fff; }
+    padding: 0.5em;
+    font-size: 1.1em;
+    width: 100%; }
+    .folder-name:hover {
+      background-color: #61a0ff; }
+  .folder-list {
+    display: none;
+    padding-left: 1em; }
 
 /*# sourceMappingURL=Folder.module.css.map */

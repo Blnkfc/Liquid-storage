@@ -1,7 +1,9 @@
+'use client';
 import styles from "./globals.css"
 import Header from "./Components/Header/page.jsx";
 import Footer from "./Components/Footer/page.jsx";
 import {useStore} from "@/src/store"
+import Storage from "@/app/Home/page";
 
 export const metadata = {
     title: 'Create Next app',
