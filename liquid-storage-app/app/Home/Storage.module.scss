@@ -1,20 +1,20 @@
 @import "../variables";
 
 .storage {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
   color: $text-dark;
   width: $popup-width;
-  &-add-btn{
-    padding: 0.5em;
-    background-image: url("/assets/btn-background.png");
-    background-size: cover;
-    border: solid 1px $blue;
-    border-radius: 1em;
-    color: $text-light;
-    &:hover{
-      color: $text-white;
+  height: 20em;
+    &-add-btn {
+      width: 98%;
+      align-self: center;
+      background-image: url("/assets/storage-btn-background.png");
+      border-radius: 1em;
+      @extend .btn-styles;
     }
+  h1 {
+    font-family: Lato, sans-serif;
   }
-}
-h1 {
-  font-family: Lato,sans-serif;
 }

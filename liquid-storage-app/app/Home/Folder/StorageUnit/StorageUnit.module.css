@@ -3,8 +3,26 @@
   justify-content: center;
   align-items: center; }
 
-li {
+.btn-styles {
+  padding: 0.5em 1em 0.5em 1em;
+  background-size: cover;
+  border: solid 1px #0066ff;
+  color: #d9f6ff; }
+  .btn-styles:hover {
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 0px 3px 1px #0066ff;
+    -moz-box-shadow: 0px 0px 3px 1px #0066ff;
+    box-shadow: 0px 0px 3px 1px #0066ff; }
+
+.storage-unit {
   list-style: none;
+  line-height: 2em;
+  height: 2em;
   color: #280078; }
+  .storage-unit:hover {
+    -webkit-box-shadow: inset 0px 0px 20px 2px #61a0ff;
+    -moz-box-shadow: inset 0px 0px 20px 2px #61a0ff;
+    box-shadow: inset 0px 0px 20px 2px #61a0ff; }
 
 /*# sourceMappingURL=StorageUnit.module.css.map */

@@ -17,7 +17,9 @@
     "eslint": "7.23.0",
     "eslint-config-next": "12.0.4",
     "extend": "^3.0.2",
+    "get-title-at-url": "^2.0.0",
     "https-proxy-agent": "^7.0.0",
+    "immer": "^10.0.2",
     "next": "^13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -26,6 +28,8 @@
   },
   "devDependencies": {
     "@mui/lab": "^5.0.0-alpha.136",
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
     "fs-extra": "^11.1.1",
     "rimraf": "^5.0.1"
   }

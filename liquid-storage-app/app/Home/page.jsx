@@ -1,20 +1,38 @@
 'use client';
 import Folder from "@/app/Home/Folder/Folder";
 import {useStore} from "@/src/store";
-import { TreeView } from '@mui/lab';
+import React, { useState } from 'react';
 
 
 
 const Storage = () => {
-    const folders = useStore.getState().foldersList
-        .map((F, index) => { return <Folder name={F.name} tabs={F.tabs} id={F.id} />;})
+    const foldersList = useStore((state) => state.foldersList);
+    const [folders, setFolders] = useState([]);
+
+
+    React.useEffect(() => {
+        setFolders(
+            foldersList.map((F, index) => (
+                <Folder key={index} name={F.name} tabs={F.tabs} id={F.id} />
+            ))
+        );
+    }, [foldersList]);
+
+    const addFolder = () => {
+        useStore.setState((state) => ({
+            foldersList: [
+                ...state.foldersList,
+                { name: "Folder", isFolder: true, tabs: [], id: state.foldersList.length },
+            ],
+        }));
+    };
     return(
         <div className={"storage"}>
-            <h1>Folders:</h1>
-            <ul className={"storage-list"} id={"str-l"}>
+            <div className={"storage-list"}>
+                <h1>Folders:</h1>
                 {folders}
-            </ul>
-            <button className={"storage-add-btn"}>Add Folder</button>
+            </div>
+            <button className={"storage-add-btn"} onClick={addFolder}  >Add Folder</button>
         </div>
     )
 }

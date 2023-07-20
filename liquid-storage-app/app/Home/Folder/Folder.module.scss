@@ -3,18 +3,53 @@
 .folder{
   color: $text-dark;
   font-family: Lato, sans-serif;
+  padding-bottom: 0.3em;
   &-name{
     display: block;
     padding: 0.5em ;
     font-size: 1.1em;
     width: 100%;
     &:hover{
-      background-color: $light-blue;
+      cursor: pointer;
     }
   }
+  &-delete-btn{
+    padding:0.1em 2em 0.1em 2em;
+    background-size: cover;
+    color:darken( $text-white, 20%);
+    font-weight: bold;
+    background-image: url("/assets/folder-delete-btn-background.png");
+    border-radius: 1em;
+    border: solid 1px $border-red;
+    &:hover{
+      color: $text-white;
+      font-weight: bold;
+      -webkit-box-shadow: 0px 0px 3px 1px rgba(255,0,0,1);
+      -moz-box-shadow: 0px 0px 3px 1px rgba(255,0,0,1);
+      box-shadow: 0px 0px 3px 1px rgba(255,0,0,1);
+    }
+  }
+  div{
+    display: flex;
+    &:hover{
+      border-radius: 0.5em;
+      background-color:$light-blue;
+    }
+  }
+
   &-list{
-    display: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
     padding-left: 1em;
+    li{
+      list-style: none;
+    }
+    &-btn{
+      @extend .btn-styles;
+      background-image: url("/assets/folder-list-btn-background.png");
+      border-radius: 0.5em;
+    }
   }
 }
 

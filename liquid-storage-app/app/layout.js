@@ -1,9 +1,10 @@
-'use client';
+
 import styles from "./globals.css"
 import Header from "./Components/Header/page.jsx";
 import Footer from "./Components/Footer/page.jsx";
 import {useStore} from "@/src/store"
 import Storage from "@/app/Home/page";
+import StoreInitializer from "@/app/Components/StoreInitializer";
 
 export const metadata = {
     title: 'Create Next app',
@@ -17,13 +18,12 @@ export default async function RootLayout({ children }) {
         foldersList: data.foldersList,
     })
 
-
-
-
     return (
         <html lang="en">
         <meta httpEquiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;"/>        <body>
+        <StoreInitializer foldersList={data.foldersList} />
         <Header />
+        <Storage />
         <main >{children}</main>
         <Footer />
         </body>
