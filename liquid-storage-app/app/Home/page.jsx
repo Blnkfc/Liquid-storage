@@ -22,7 +22,7 @@ const Storage = () => {
         useStore.setState((state) => ({
             foldersList: [
                 ...state.foldersList,
-                { name: "Folder", isFolder: true, tabs: [], id: state.foldersList.length },
+                { name: "Folder", isFolder: true, tabs: [], id: Math.random().toString(36).slice(2, 7) },
             ],
         }));
     };
