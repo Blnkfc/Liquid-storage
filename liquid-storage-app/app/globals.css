@@ -33,7 +33,8 @@
   padding: 0; }
 
 body {
-  background-color: #caebfc; }
+  background-color: #caebfc;
+  min-height: 45em; }
 
 .flex-centering, .header-nav-link {
   display: flex;
@@ -150,6 +151,13 @@ body {
     -moz-box-shadow: 0px 0px 3px 1px #0066ff;
     box-shadow: 0px 0px 3px 1px #0066ff; }
 
+.dragNDropTabs, .storage-dragNDrop-tabsSaved, .storage-dragNDrop-tabsToSave {
+  position: absolute;
+  width: 40em;
+  height: 40em;
+  background-color: #fff;
+  z-index: 999; }
+
 .storage {
   display: flex;
   flex-flow: column wrap;
@@ -164,6 +172,21 @@ body {
     border-radius: 1em; }
   .storage h1 {
     font-family: Lato, sans-serif; }
+  .storage-dragNDrop {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh; }
+    .storage-dragNDrop-background {
+      width: 100vw;
+      height: 100vh;
+      z-index: 998;
+      background-color: #000;
+      opacity: 50%; }
 
 .flex-centering, .header-nav-link {
   display: flex;
@@ -192,7 +215,9 @@ body {
     font-size: 1.1em;
     width: 100%; }
     .folder-name:hover {
-      cursor: pointer; }
+      cursor: pointer;
+      border-radius: 0.5em;
+      background-color: #2d7df7; }
   .folder-delete-btn {
     padding: 0.1em 2em 0.1em 2em;
     background-size: cover;
@@ -209,9 +234,6 @@ body {
       box-shadow: 0px 0px 3px 1px red; }
   .folder div {
     display: flex; }
-    .folder div:hover {
-      border-radius: 0.5em;
-      background-color: #61a0ff; }
   .folder-list {
     display: flex;
     flex-flow: column wrap;
@@ -249,5 +271,9 @@ body {
     -webkit-box-shadow: inset 0px 0px 20px 2px #61a0ff;
     -moz-box-shadow: inset 0px 0px 20px 2px #61a0ff;
     box-shadow: inset 0px 0px 20px 2px #61a0ff; }
+  .storage-unit-link {
+    text-decoration: none; }
+    .storage-unit-link:hover {
+      text-decoration: underline; }
 
 /*# sourceMappingURL=globals.css.map */

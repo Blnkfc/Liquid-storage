@@ -15,6 +15,13 @@
     -moz-box-shadow: 0px 0px 3px 1px #0066ff;
     box-shadow: 0px 0px 3px 1px #0066ff; }
 
+.dragNDropTabs, .storage-dragNDrop-tabsSaved, .storage-dragNDrop-tabsToSave {
+  position: absolute;
+  width: 40em;
+  height: 40em;
+  background-color: #fff;
+  z-index: 999; }
+
 .storage {
   display: flex;
   flex-flow: column wrap;
@@ -29,5 +36,20 @@
     border-radius: 1em; }
   .storage h1 {
     font-family: Lato, sans-serif; }
+  .storage-dragNDrop {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh; }
+    .storage-dragNDrop-background {
+      width: 100vw;
+      height: 100vh;
+      z-index: 998;
+      background-color: #000;
+      opacity: 50%; }
 
 /*# sourceMappingURL=Storage.module.css.map */

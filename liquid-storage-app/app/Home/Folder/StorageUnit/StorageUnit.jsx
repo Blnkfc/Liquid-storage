@@ -6,7 +6,7 @@ export default  function StorageUnit(props){
     const pullIcon = "https://www.google.com/s2/favicons?domain="+props.link.value
     return(
         <li key={props.id} className={"storage-unit"}>
-            <a href={props.link.value}>
+            <a href={props.link.value} className={"storage-unit-link"}>
                 <img src={pullIcon} alt=""/>
                 <span>{props.link.value}</span>
             </a>

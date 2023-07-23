@@ -11,6 +11,8 @@
     width: 100%;
     &:hover{
       cursor: pointer;
+      border-radius: 0.5em;
+      background-color:#2d7df7;
     }
   }
   &-delete-btn{
@@ -30,12 +32,7 @@
     }
   }
   div{
-    display: flex;
-    &:hover{
-      border-radius: 0.5em;
-      background-color:$light-blue;
-    }
-  }
+    display: flex;}
 
   &-list{
     display: flex;
@@ -51,5 +48,6 @@
       border-radius: 0.5em;
     }
   }
+
 }
 
